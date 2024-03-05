@@ -1,0 +1,63 @@
+body{
+    background: var(--background-color);
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-advice{
+    background:var(--advice-card-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin:30px;
+    padding: 25px 40px;
+    max-width: 400px;
+    position: relative;
+    border-radius: 8px;
+}
+
+.card-advice .title{
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 6px;
+    color:var(--advice-dice-color);
+}
+
+.card-advice .content{
+    font-size: 18px;
+    color:var(--text-color);
+    text-align: center;
+}
+
+.card-advice .pattern-divider{
+    width: 100%;
+    margin:30px 0;
+}
+
+.card-advice .border-dice{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: var(--advice-dice-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: -25px;
+    border-radius: 50%;
+    cursor: pointer;
+    border-style: none;
+    transition: 0.3s ease-in-out;
+}
+
+.card-advice .border-dice:hover{
+    background-color: hsl(150, 90%, 30%) ;
+}
+
+.card-advice .border-dice img.dice{
+    width: 20px;
+}
